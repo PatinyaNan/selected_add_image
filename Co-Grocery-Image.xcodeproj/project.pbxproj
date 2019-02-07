@@ -8,13 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		84EC709D22092E3100460715 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC709C22092E3100460715 /* AppDelegate.swift */; };
-		84EC709F22092E3100460715 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC709E22092E3100460715 /* ViewController.swift */; };
 		84EC70A222092E3100460715 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EC70A022092E3100460715 /* Main.storyboard */; };
 		84EC70A522092E3100460715 /* Co_Grocery_Image.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84EC70A322092E3100460715 /* Co_Grocery_Image.xcdatamodeld */; };
 		84EC70A722092E3500460715 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84EC70A622092E3500460715 /* Assets.xcassets */; };
 		84EC70AA22092E3500460715 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84EC70A822092E3500460715 /* LaunchScreen.storyboard */; };
 		84EC70B522092E3600460715 /* Co_Grocery_ImageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC70B422092E3600460715 /* Co_Grocery_ImageTests.swift */; };
 		84EC70C022092E3600460715 /* Co_Grocery_ImageUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC70BF22092E3600460715 /* Co_Grocery_ImageUITests.swift */; };
+		84EC70CF22092FA800460715 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC70CD22092FA800460715 /* Item.swift */; };
+		84EC70D022092FA800460715 /* Item+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC70CE22092FA800460715 /* Item+CoreDataProperties.swift */; };
+		84EC70D2220931D000460715 /* AddEditVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC70D1220931D000460715 /* AddEditVC.swift */; };
+		84EC70D42209342200460715 /* MainTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EC70D32209342200460715 /* MainTVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +40,6 @@
 /* Begin PBXFileReference section */
 		84EC709922092E3100460715 /* Co-Grocery-Image.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Co-Grocery-Image.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EC709C22092E3100460715 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		84EC709E22092E3100460715 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84EC70A122092E3100460715 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84EC70A422092E3100460715 /* Co_Grocery_Image.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Co_Grocery_Image.xcdatamodel; sourceTree = "<group>"; };
 		84EC70A622092E3500460715 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -49,6 +51,10 @@
 		84EC70BB22092E3600460715 /* Co-Grocery-ImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Co-Grocery-ImageUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84EC70BF22092E3600460715 /* Co_Grocery_ImageUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Co_Grocery_ImageUITests.swift; sourceTree = "<group>"; };
 		84EC70C122092E3600460715 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84EC70CD22092FA800460715 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		84EC70CE22092FA800460715 /* Item+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		84EC70D1220931D000460715 /* AddEditVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditVC.swift; sourceTree = "<group>"; };
+		84EC70D32209342200460715 /* MainTVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +85,8 @@
 		84EC709022092E3100460715 = {
 			isa = PBXGroup;
 			children = (
+				84EC70CD22092FA800460715 /* Item.swift */,
+				84EC70CE22092FA800460715 /* Item+CoreDataProperties.swift */,
 				84EC709B22092E3100460715 /* Co-Grocery-Image */,
 				84EC70B322092E3600460715 /* Co-Grocery-ImageTests */,
 				84EC70BE22092E3600460715 /* Co-Grocery-ImageUITests */,
@@ -100,12 +108,13 @@
 			isa = PBXGroup;
 			children = (
 				84EC709C22092E3100460715 /* AppDelegate.swift */,
-				84EC709E22092E3100460715 /* ViewController.swift */,
 				84EC70A022092E3100460715 /* Main.storyboard */,
 				84EC70A622092E3500460715 /* Assets.xcassets */,
 				84EC70A822092E3500460715 /* LaunchScreen.storyboard */,
 				84EC70AB22092E3500460715 /* Info.plist */,
 				84EC70A322092E3100460715 /* Co_Grocery_Image.xcdatamodeld */,
+				84EC70D1220931D000460715 /* AddEditVC.swift */,
+				84EC70D32209342200460715 /* MainTVC.swift */,
 			);
 			path = "Co-Grocery-Image";
 			sourceTree = "<group>";
@@ -259,9 +268,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84EC709F22092E3100460715 /* ViewController.swift in Sources */,
 				84EC709D22092E3100460715 /* AppDelegate.swift in Sources */,
+				84EC70CF22092FA800460715 /* Item.swift in Sources */,
+				84EC70D2220931D000460715 /* AddEditVC.swift in Sources */,
 				84EC70A522092E3100460715 /* Co_Grocery_Image.xcdatamodeld in Sources */,
+				84EC70D42209342200460715 /* MainTVC.swift in Sources */,
+				84EC70D022092FA800460715 /* Item+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
